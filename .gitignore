@@ -1,4 +1,9 @@
+.bundle
+.cache
+.sass-cache
+build/
+.idea/
+bin/
 **/.DS_Store
-**/.idea
-**/bin
+Gemfile.lock
 
