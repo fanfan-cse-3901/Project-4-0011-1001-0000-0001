@@ -1,16 +1,20 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Middleman" %></title>
-    <%= stylesheet_link_tag "site" %>
+    <%= stylesheet_link_tag "publications.css" %>
+    <link rel="stylesheet" href="//basehold.it/22" />
+    <%#= javascript_include_tag "site" %>
   </head>
+
   <body>
     <header>
-     <%= partial "navigation" %>
+      <%= partial "navigation" %>
     </header>
     <%= yield %>
   </body>
+
 </html>

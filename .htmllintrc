@@ -25,7 +25,7 @@
     "label-req-for": true, // All <label> tags must have a for attribute
     "line-end-style": "lf", // Unix-style LF line-endings
     "spec-char-escape": true, // XML special characters (<,>,&,etc.) must be escaped
-    "tag-bans": ["br", "button", "div", "hr", "iframe", "style"],
+    "tag-bans": ["br", "button", "hr", "style"],
     "tag-close": true, // tags that open must close
     "tag-name-lowercase": true, // only lowercase for tag names
     "tag-name-match": true, // tag names must match, in both name and case
