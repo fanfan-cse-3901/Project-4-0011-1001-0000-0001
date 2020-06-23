@@ -78,13 +78,16 @@ i {
 }
 
 @media screen and (min-width: 600px) {
+  #left {
+    padding-right: 5%;
+  }
+  #right {
+    padding-left: 5%;
+  }
   .flex-container {
     display: flex;
   }
-  #left {
-    padding-right: 7.5%;
-  }
-  #right {
-    padding-left: 7.5%;
+  #navigation li a {
+    padding: 0.6111111111em 2.4444444444em;
   }
 }
