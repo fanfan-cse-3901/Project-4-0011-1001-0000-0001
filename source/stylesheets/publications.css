@@ -55,27 +55,6 @@ i {
   padding-left: 5%;
   padding-right: 5%;
 }
-#navigation {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: darkred;
-  width: 100%;
-}
-#navigation li {
-  float: left;
-}
-#navigation li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 0.6111111111em 1.2222222222em;
-  text-decoration: none;
-}
-#navigation li a:hover {
-  background-color: #8F1001;
-}
 
 @media screen and (min-width: 600px) {
   #left {
@@ -86,8 +65,5 @@ i {
   }
   .flex-container {
     display: flex;
-  }
-  #navigation li a {
-    padding: 0.6111111111em 2.4444444444em;
   }
 }
