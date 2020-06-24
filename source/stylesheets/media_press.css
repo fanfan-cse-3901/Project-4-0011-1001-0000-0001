@@ -1,0 +1,48 @@
+/* File Created on 06/22/20 by Kevin Dong */
+.med_pre {
+    padding: 5%
+}
+
+html {
+    font-size: 1.125em; /* 18 / 16 = 1.125 */
+    line-height: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+    font-family: "Titillium Web", sans-serif, Helvetica, Arial;
+    background: whitesmoke;
+}
+h1 {
+    font-size: 2.2222222222em; /* 40 / 18 = 2.2222222222 */
+    line-height: 1.1em; /* 44 / 40 = 1.1 */
+    padding-top: 0.55em; /* 22 / 40 = 0.55 */
+    padding-bottom: 0.55em; /* 22 / 40 = 0.55 */
+    color: #8F1001;
+}
+h2 {
+    font-weight: bold;
+    font-size: 1.5em; /* 27 / 18 = 1.5 */
+    line-height: 1.2222222222em; /* 33 / 27 = 1.222 */
+    padding-bottom: 0.407407407em; /* 11 / 27 = 0.4074074074 */
+}
+h3 {
+    font-weight: bold;
+    font-size: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+    line-height: 1.375em; /* 33 / 24 = 1.375 */
+    padding-bottom: 0.9166666667em; /* 22 / 24 = 0.9166666667 */
+}
+ul {
+    padding-bottom: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+}
+i {
+    font-style: italic;
+}
+
+@media screen and (min-width: 600px) {
+    #left {
+        padding-right: 5%;
+    }
+    #right {
+        padding-left: 5%;
+    }
+    .flex-container {
+        display: flex;
+    }
+}
