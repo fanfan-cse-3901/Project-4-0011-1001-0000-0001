@@ -1,11 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Media and Press</title>
-    <meta charset="utf-8" />
-    <link type="text/css" rel="stylesheet" href="stylesheets/media_press.css" media="screen" />
-  </head>
-    <body>
-
-    </body>
-</html>
+---
+layout: "media_press"
+title: "James W. Davis, Media and Press"
+---
+<!-- File Created on 06/22/20 by Kevin Dong -->
+<% json =  JSON.parse(File.read('./data/media_press.json')) %>
+<h1 class=med_pre>Media and Press</h1>
+<div class="flex-container med_pre">
+  <div id=left>
+    <h2>TV/Video</h2>
+    <ul>
+      <% json['TVVideo'].each do |elem| %>
+        <% elem.each do |key, value| %>
+          <li><%= '<em>' + key + ": " + '</em>' + value %></li>
+        <% end %>
+        <br>
+      <% end %>
+    </ul>
+    <br>
+    <h2>Radio</h2>
+    <ul>
+      <% json['Radio'].each do |elem| %>
+        <% elem.each do |key, value| %>
+          <% if value.class == Array %>
+            <% text = value[0].split '[' %>
+            <li><%='<em>' + key + ': ' + '</em>' + text[0] + '<a href=' + value[1] + '>[' + text[1]%></a></li>
+          <% else %>
+            <li><%= '<em>' + key + ": " + '</em>' + value %></li>
+          <% end %>
+        <% end %>
+        <br>
+      <% end %>
+    </ul>
+  </div>
+  <div id=right>
+    <h2>Print</h2>
+    <ul>
+      <% json['Print'].each do |elem| %>
+        <% elem.each do |key, value| %>
+          <% text = key.split "[" %>
+            <li><%=text[0] + '<a href='+ value[0] + '>[' + text[1] +'</a><a href=' + value[1] + '>[' + text[2]  if text.length == 3 %></a></li>
+            <li><%=text[0] + '<a href='+ value + '>[' + text[1]  if text.length == 2 %></a></li>
+            <li><%=text[0] if text.length == 1 %></li>
+         <% end %>
+        <br>
+      <% end %>
+    </ul>
+  </div>
+</div>
