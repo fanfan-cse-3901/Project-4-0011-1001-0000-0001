@@ -1,11 +1,9 @@
-<%= stylesheet_link_tag 'index', 'index.css' %>
-
 <div class="header">
     <h1><%=data.index.header.name%></h1>
   <%#Print out each of its biography in header %>
 <% data.index.bio.each do |node| %>
     <p class="header"><%= node %></p>
   <% end %>
-  <A HREF=<%=data.index.header.college_url %>><%=data.index.header.college %></A>
-  <A HREF=<%=data.index.header.dpt_url %>><%=data.index.header.dpt %></A>
+  <p class="header"><a href=<%=data.index.header.college_url %>><%=data.index.header.college %></a></p>
+  <p class="header"><a href=<%=data.index.header.dpt_url %>><%=data.index.header.dpt %></a></p>
 </div>
