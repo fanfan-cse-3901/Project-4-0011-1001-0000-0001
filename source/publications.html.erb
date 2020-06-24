@@ -7,47 +7,21 @@ title: "James W. Davis, Publications"
 
 <div class="flex-container pub-view">
   <div id="left">
-    <ul>
-      <li>"Hierarchical Classification with Confidence using Generalized Logits"</li>
-      <li>J. Davis, T. Liang, J. Enouen, and R. Ilin</li>
-      <li>To appear, International Conference on Pattern Recognition, January 2021.</li>
-    </ul>
-    <ul>
-      <li>"Hierarchical Classification with Confidence using Generalized Logits"</li>
-      <li>J. Davis, T. Liang, J. Enouen, and R. Ilin</li>
-      <li>To appear, International Conference on Pattern Recognition, January 2021.</li>
-    </ul>
-    <ul>
-      <li>"Hierarchical Classification with Confidence using Generalized Logits"</li>
-      <li>J. Davis, T. Liang, J. Enouen, and R. Ilin</li>
-      <li>To appear, International Conference on Pattern Recognition, January 2021.</li>
-    </ul>
-    <ul>
-      <li>"Hierarchical Classification with Confidence using Generalized Logits"</li>
-      <li>J. Davis, T. Liang, J. Enouen, and R. Ilin</li>
-      <li>To appear, <i>International Conference on Pattern Recognition</i>, January 2021.</li>
-    </ul>
+    <% data.event_list_left.each do |node| %>
+      <ul>
+        <% node.each do |list| %>
+          <li><%= list %></li>
+        <% end %>
+      </ul>
+    <% end %>
   </div>
   <div id="right">
-    <ul>
-      <li>"Hierarchical Classification with Confidence using Generalized Logits"</li>
-      <li>J. Davis, T. Liang, J. Enouen, and R. Ilin</li>
-      <li>To appear, International Conference on Pattern Recognition, January 2021.</li>
-    </ul>
-    <ul>
-      <li>"Hierarchical Classification with Confidence using Generalized Logits"</li>
-      <li>J. Davis, T. Liang, J. Enouen, and R. Ilin</li>
-      <li>To appear, International Conference on Pattern Recognition, January 2021.</li>
-    </ul>
-    <ul>
-      <li>"Hierarchical Classification with Confidence using Generalized Logits"</li>
-      <li>J. Davis, T. Liang, J. Enouen, and R. Ilin</li>
-      <li>To appear, International Conference on Pattern Recognition, January 2021.</li>
-    </ul>
-    <ul>
-      <li>"Hierarchical Classification with Confidence using Generalized Logits"</li>
-      <li>J. Davis, T. Liang, J. Enouen, and R. Ilin</li>
-      <li>To appear, <i>International Conference on Pattern Recognition</i>, January 2021.</li>
-    </ul>
+    <% data.event_list_right.each do |node| %>
+      <ul>
+        <% node.each do |list| %>
+          <li><%= list %></li>
+        <% end %>
+      </ul>
+    <% end %>
   </div>
 </div>
