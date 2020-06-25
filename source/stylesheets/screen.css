@@ -8,65 +8,184 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 /* File Created on 06/24/2020 by Kevin Dong */
 /* File Edited on 06/24/2020 by Amanda Cheng, Kevin Dong, Prachiti Garge, Yifan Yao, Troy Stein: Collaborated on style */
+
+/*
+Default Values:
+baseline 22px
+font-size 18px
+line-height = baseline multiplier / font-size
+Ready to Use:
+/*| Copy from here */
+/*| 0.6111111111em; /* 11 / 18 = 0.6111111111 */
+/*| 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+/*| 2.4444444444em; /* 44 / 18 = 2.4444444444 */
+
+/* Begin site styles below */
+/* Created on 06/25/2020 by Yifan Yao */
+html {
+  font-size: 1.125em; /* 18 / 16 = 1.125 */
+  line-height: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+  background-color: whitesmoke;
+  font-family: "Oswald", sans-serif;
+  align-content: center;
+  margin: auto;
+}
+/* Created on 06/25/2020 by Yifan Yao */
+h1 {
+  font-size: 2.2222222222em; /* 40 / 18 = 2.2222222222 */
+  line-height: 1.1em; /* 44 / 40 = 1.1 */
+  padding-top: 0.55em; /* 22 / 40 = 0.55 */
+  padding-bottom: 0.55em; /* 22 / 40 = 0.55 */
+}
+/* Created on 06/25/2020 by Yifan Yao */
+h2 {
+  font-weight: bold;
+  font-size: 1.5em; /* 27 / 18 = 1.5 */
+  line-height: 1.2222222222em; /* 33 / 27 = 1.222 */
+  padding-bottom: 0.407407407em; /* 11 / 27 = 0.4074074074 */
+}
+/* Created on 06/25/2020 by Yifan Yao */
+h3 {
+  font-weight: bold;
+  font-size: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+  line-height: 1.375em; /* 33 / 24 = 1.375 */
+  padding-bottom: 0.9166666667em; /* 22 / 24 = 0.9166666667 */
+}
+/* Created on 06/25/2020 by Yifan Yao */
+ul {
+  padding-bottom: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+}
+/* Created on 06/25/2020 by Yifan Yao */
+i {
+  font-style: italic;
+}
+/* Created on 06/25/2020 by Yifan Yao */
 body {
-  background-color: #7cc0ae;
   color: #423f40;
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Oswald', sans-serif;
   text-align: center;
 }
+/* Created on 06/25/2020 by Yifan Yao */
 h1 {
-  padding: 0px;
-  margin: 0px 0px;
-  background: #e4a67c;
-  color: #ffffff;
-  display: inline-block;
-  border: 3px solid #423f40;
+  padding-bottom: 50px;
   font-size: 30px;
-  font-family: 'Oswald', sans-serif;
 }
-a {
-  padding: 0px;
-  /*margin: 0px 0px;*/
-  text-align: left;
-  /*background: #6F0BBF;*/
-  font-size: 10px;
+/* Created on 06/25/2020 by Kevin Dong */
+.content-padding {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.header {
+  background: #8e1002;
 }
 li.header {
-  padding: 0px;
   margin: 2px 0px;
   text-align: center;
   color: #ffffff;
   font-size: 10px;
 }
-div p {
-  background-color: #e2a57c;
+div.header h1{
+  padding: 0px;
   color: #ffffff;
 }
-header {
-  border-bottom: solid 3px ;
-  border-bottom-color: #423f40;
+/*
+Created 06/23/2020 by Amanda Cheng.
+Edited 06/24/2020 by Amanda Cheng: introduced new stylizations for additional elements in index template.
+Edited 06/25/2020 by Amanda Cheng: Changed margins to keep everything in order.
+ */
+*{
+  box-sizing: border-box;
+}
+/* Created 06/23/2020 by Amanda Cheng */
+p.intro {
+  float: right;
+  width: 82%;
+  text-align: left;
+}
+/* Created 06/23/2020 by Amanda Cheng */
+img {
+  float: left;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  max-height:600px;
+  max-width: 400px;
+}
+/* Created 06/23/2020 by Amanda Cheng */
+div.left_pic{
+  font-weight: bold;
+  text-align: left;
+  padding: 5% 5%;
+}
+/* Created 06/23/2020 by Amanda Cheng */
+/* Education Section */
+.right_pic {
+  padding: 15% 5%;
+  text-align: left;
+}
+.right_pic img {
+  float: right;
+  height: auto;
+  width: auto;
+  max-height: 500px;
+}
+/* Created 06/23/2020 by Amanda Cheng */
+/* Noteworthy section */
+.bottom {
+  font-weight: bold;
+  padding: 2% 0%;
+  border: solid black 2px;
+  width: 65%;
+  display: inline-block;
+}
+/* Created 06/23/2020 by Amanda Cheng */
+.bottom li{
+  font-size: 12px;
 }
 
-.content-padding {
-  padding-left: 5%;
-  padding-right: 5%;
+/* Created on 06/25/2020 by Prachiti Garge */
+.people h2 {
+  font-weight: bold;
 }
+/* Created on 06/25/2020 by Prachiti Garge */
+
+/* Created on 06/25/2020 by Prachiti Garge */
+/* For names */
+.people .per_name{
+  font-weight: bold;
+}
+/* Created on 06/25/2020 by Prachiti Garge */
+/* For qualifications */
+.people .per_qual{
+  font-style:  italic;
+}
+/* Created on 06/25/2020 by Prachiti Garge */
+/* For topic */
+.people .per_topic{
+  font-weight: inherit;
+}
+/* Created on 06/25/2020 by Prachiti Garge */
+.people li{
+  list-style-type: circle;
+}
+
+/* Created on 06/25/2020 by Kevin Dong */
 div div {
   text-align: left;
 }
+/* Created on 06/25/2020 by Yifan Yao */
 #navigation {
   position: relative;
-  margin: 0;
+  margin: auto;
   padding: 0;
   overflow: hidden;
-  background-color: #e6a77c;
+  background-color: #8e1002;;
   width: 100%;
 }
+/* Created on 06/25/2020 by Yifan Yao */
 #navigation li {
   float: left;
 }
+/* Created on 06/25/2020 by Yifan Yao */
 #navigation li a {
   display: block;
   color: #ffffff;
@@ -74,11 +193,22 @@ div div {
   padding: 0.6111111111em 1.2222222222em;
   text-decoration: none;
 }
+/* Created on 06/25/2020 by Yifan Yao */
 #navigation li a:hover {
   background-color: #5c5b61;
 }
+/* Edited on 06/24/2020 by Kevin and Yifan: Flexbox changes for columns */
+@media screen and (min-width: 640px) {
+  #left {
+    padding-right: 5%;
+  }
+  #right {
+    padding-left: 5%;
+  }
+  .flex-container, .flex-child {
+    display: flex;
+  }
 
-@media screen and (min-width: 600px) {
   #navigation li a {
     padding: 0.6111111111em 2.4444444444em;
   }
