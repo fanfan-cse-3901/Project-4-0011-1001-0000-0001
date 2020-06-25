@@ -1,0 +1,50 @@
+{
+  "B.S_cur":{
+    "James Enouen": "",
+    "Isaac Zachmann": "(ECE)"
+  },
+  "M.S_cur": {
+    "Jamie Cunningham": "B.S./M.S. student"
+  },
+  "Ph.D_cur": {
+    "Tong Liang": "",
+    "Logan Frank": "M.S./Ph.D student",
+    "Ash Radhakrishnan": "M.S./Ph.D student"
+  },
+  "B.S_alum":{
+    "Brett Whitford": ["B.S. student", "B.S. Honor's Thesis: \"Weakly Supervised Learning for Semantic Segmentation\", 2018."],
+    "Chuhan Feng": ["",""],
+    "Dan Marchese": ["","Undergraduate Honors Thesis: \"A Framework for Using Custom Features to Colorize Grayscale Images\", May 2016. (Now at Amazon)"],
+    "Jeremy Ledonne": ["","Undergraduate research assistant. Graduated 2015."],
+    "Ryan Niemocienski": ["","Undergraduate research assistant, 2013-2014."],
+    "Kyle Salberg": ["","Undergraduate research assistant. Graduated June 2012."],
+    "Michael Schoenberg": ["","Undergraduate research assistant. Graduated June 2012. (Now at Microsoft)"],
+    "Ronak Buch": ["","Undergraduate research assistant. Graduated June 2012. (Now at UIUC)"],
+    "Karl Salva": ["","Undergraduate research assistant. Graduated March 2009."],
+    "Robin Tan": ["","Undergraduate Honors Thesis: \"Human-Content Video Coding\", March 2002."]
+  },
+  "M.S_alum": {
+    "Sam Lerner": ["B.S./M.S. student",""],
+    "Chris Menart": ["M.S. student","M.S. Thesis: \"Global-Context Refinement for Semantic Image Segmentation\", 2018. (Now at AFRL)"],
+    "Debanjan Nandi": ["",""],
+    "Mo Akbar": ["B.S./M.S. student",""],
+    "Josh Sandvick": ["B.S/M.S. student","M.S. Thesis: \"Machine Translation Through the Creation of a Common Embedding Space\", 2018."],
+    "Rohith Savaram": ["","M.S. Project, May 2016. (now at Expedia)"],
+    "Manjari Akella": ["","M.S. Project, May 2015. (Now at IBM)"],
+    "Ryan Feather": ["","MS Thesis: \"Tracking and Activity Analysis in Wide Area Aerial Surveillance Video\", August 2011."],
+    "Matt Nedrich": ["","MS Thesis: \"Detecting Behavioral Zones in Local and Global Camera Views\", June 2011. (Now at Intel)."],
+    "Alex Morison": ["","MS Thesis: \"An Adaptive Focus-of-Attention Model for Video Surveillance and Monitoring\", August 2006. (Now at OSU/AFRL)"],
+    "Vignesh Kannappan": ["","MS Thesis: \"Automatic Temporal Segmentation of Human Actions\", June 2003. (Now at Microsoft)"],
+    "Stephanie Taylor": ["","MS Thesis: \"Computer Analysis and Recognition of Walking Movements\", June 2002."]
+  },
+  "Ph.D_alum": {
+    "Joe Barker": ["",""],
+    "Daniya Zamalieva": ["","Ph.D. Thesis: \"Transformational Models for Background Subtraction with Moving Cameras\", September 2014. (Now at Google)"],
+    "Kevin Streib": ["","Ph.D. Thesis: \"Improved Graph-based Clustering with Applications in Computer Vision and Behavior Analysis\", March 2012. (and Post-Doc with Davis)"],
+    "Karthik Sankaranarayanan": ["","Ph.D. Thesis: \"Multiple Instance Learning for Localization and Tracking of Persistent Targets\", August 2011. (Now at IBM India)"],
+    "Mark Keck": ["","Ph.D. Thesis: \"Occlusion Recovery and Reasoning for 3D Surveillance\", August 2009. (Now at BAE)"],
+    "Ambrish Tyagi": ["","Ph.D. Thesis: \"Layered Tracker Switching for Visual Surveillance\", August 2008. (Now at STI - Omron Scientific Technologies)"],
+    "Vinay Sharma": ["","Ph.D. Thesis: \"Simultaneous Object Detection and Segmentation using Top-down and Bottom-up Processing\", November 2007. (Now at Texas Instruments)"],
+    "Hui Gao": ["","Ph.D. Thesis: \"Extracting Key Features for Analysis and Recognition in Computer Vision\", February 2006. (Now at Microsoft)</li>"]
+  }
+}
