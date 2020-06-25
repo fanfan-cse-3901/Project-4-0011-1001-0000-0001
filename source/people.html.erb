@@ -13,33 +13,36 @@ title: "James W. Davis, People"
     <!-- For three levels of students -->
     <!-- For B.S. -->
     <div class="leftSide flex-child">
-      <h2>Current B.S. Students</h2>
+      <h2>B.S. Students</h2>
       <ul>
         <% json['B.S_cur'].each do |name, qual| %>
           <!-- Print each person's name and qualification -->
-          <li><em class="per_name"><%= name %></em><% if qual!="" %><br><em class="per_qual"><%= qual %></em><%end%></li>
+          <li><em class="per_name"><%= name %></em><% if qual!="" %><br/><em class="per_qual"><%= qual %></em><%end%></li>
+        <br/>
         <% end %>
       </ul>
     </div>
 
     <!-- For M.S. -->
     <div class="inCentre flex-child">
-      <h2>Current M.S. Students</h2>
+      <h2>M.S. Students</h2>
       <ul>
         <% json['M.S_cur'].each do |name, qual| %>
           <!-- Print each person's name and qualification -->
-          <li><em class="per_name"><%= name %></em><% if qual!="" %><br><em class="per_qual"><%= qual %></em><%end%></li>
+          <li><em class="per_name"><%= name %></em><% if qual!="" %><br/><em class="per_qual"><%= qual %></em><%end%></li>
+        <br/>
         <% end %>
       </ul>
     </div>
 
     <!-- For Ph.D. -->
     <div class="rightSide flex-child">
-      <h2>Current Ph.D. Students</h2>
+      <h2>Ph.D. Students</h2>
       <ul>
         <% json['Ph.D_cur'].each do |name, qual| %>
           <!-- Print each person's name and qualification -->
-          <li><em class="per_name"><%= name %></em><% if qual!="" %><br><em class="per_qual"><%= qual %></em><%end%></li>
+          <li><em class="per_name"><%= name %></em><% if qual!="" %><br/><em class="per_qual"><%= qual %></em><%end%></li>
+        <br/>
         <% end %>
       </ul>
     </div>
@@ -50,7 +53,8 @@ title: "James W. Davis, People"
     <ul>
       <% json['B.S_alum'].each do |name,details| %>
          <!-- Print out person's name, qual and topic on separate lines -->
-         <li><em class="per_name"><%= name %></em><% if details[0]!="" %><br><em class="per_qual"><%= details[0] %></em><%end%><% if details[1]!="" %><br><em class="per_topic"><%= details[1] %></em><%end%></li>
+         <li><em class="per_name"><%= name %></em><% if details[0]!="" %><br/><em class="per_qual"><%= details[0] %></em><%end%><% if details[1]!="" %><br/><em class="per_topic"><%= details[1] %></em><%end%></li>
+      <br/>
       <% end %>
     </ul>
   </div>
@@ -60,7 +64,8 @@ title: "James W. Davis, People"
     <ul>
       <% json['M.S_alum'].each do |name, details| %>
         <!-- Print out person's name, qual and topic on separate lines -->
-        <li ><em class="per_name"><%= name %></em><% if details[0]!="" %><br><em class="per_qual"><%= details[0] %></em><%end%><% if details[1]!="" %><br><em class="per_topic"><%= details[1] %></em><%end%></li>
+        <li ><em class="per_name"><%= name %></em><% if details[0]!="" %><br/><em class="per_qual"><%= details[0] %></em><%end%><% if details[1]!="" %><br/><em class="per_topic"><%= details[1] %></em><%end%></li>
+      <br/>
       <% end %>
     </ul>
   </div>
@@ -70,7 +75,8 @@ title: "James W. Davis, People"
     <ul>
       <% json['Ph.D_alum'].each do |name, details| %>
         <!-- Print out person's name, qual and topic on separate lines -->
-        <li ><em class="per_name"><%= name %></em><% if details[0]!="" %><br><em class="per_qual"><%= details[0] %></em><%end%><% if details[1]!="" %><br><em class="per_topic"><%= details[1] %></em><%end%></li>
+        <li ><em class="per_name"><%= name %></em><% if details[0]!="" %><br/><em class="per_qual"><%= details[0] %></em><%end%><% if details[1]!="" %><br/><em class="per_topic"><%= details[1] %></em><%end%></li>
+      <br/>
       <% end %>
     </ul>
   </div>
