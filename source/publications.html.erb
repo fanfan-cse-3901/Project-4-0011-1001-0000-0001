@@ -3,6 +3,7 @@ layout: "layout"
 title: "James W. Davis, Publications"
 ---
 
+<%# File created 06/21/2020 by Yifan Yao %>
 <h1 class="content-padding">Publications</h1>
 <div class="flex-container content-padding">
   <div id="left">
@@ -13,8 +14,6 @@ title: "James W. Davis, Publications"
             <li>[<a href="<%= item %>">HTML</a>]</li>
           <% elsif item.match /pdf/ %>
             <li>[<a href="http://web.cse.ohio-state.edu/~davis.1719/<%= item %>">PDF</a>]</li>
-          <% elsif data.list_italic.include? item %>
-            <li>hello<%= item %></li>
           <% else %>
             <li><%= item %></li>
           <% end %>
