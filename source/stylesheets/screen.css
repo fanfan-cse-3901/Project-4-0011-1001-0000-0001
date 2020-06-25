@@ -190,7 +190,7 @@ div div {
   display: block;
   color: #ffffff;
   text-align: center;
-  padding: 0.6111111111em 1.2222222222em;
+  padding: 0.6111111111em 0.6111111111em;
   text-decoration: none;
 }
 /* Created on 06/25/2020 by Yifan Yao */
@@ -208,7 +208,6 @@ div div {
   .flex-container, .flex-child {
     display: flex;
   }
-
   #navigation li a {
     padding: 0.6111111111em 2.4444444444em;
   }
