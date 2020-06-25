@@ -23,6 +23,12 @@ img {
   max-height:600px;
   max-width: 400px;
 }
+div.left_pic h2{
+  font-weight: bold;
+  padding: 0px 0px 70px 0px;
+  width: 50%;
+  text-align: left;
+}
 /*
 Education Section
  */
@@ -34,20 +40,15 @@ div.right_pic img {
   height: auto;
   width: auto;
   max-height: 400px;
-  max-width: 450px;
+  max-width: 4502px;
 }
 div.right_pic h3{
   font-weight: bold;
-  margin: 270px 0px 30px 200px;
+  margin: 270px 0px 20px 200px;
   width: 50%;
   text-align: left;
 }
-div.right_pic h2{
-  font-weight: bold;
-  padding: 0px 0px 50px 0px;
-  width: 50%;
-  text-align: left;
-}
+
 div.right_pic p {
   background-color: #7cc0ae;
   margin: 20px 0px 10px 200px;
@@ -77,7 +78,7 @@ div.right_pic{
   padding: 10px 10px 140px 10px;
 }
 div.bottom{
-  margin: 0px 150px;
-  padding: 0px;
+  margin: 0px 150px 10px;
+  padding: 0px 0px 20px;
   border: solid black 2px;
 }
