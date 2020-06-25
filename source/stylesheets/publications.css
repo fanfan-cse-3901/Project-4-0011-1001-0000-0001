@@ -23,14 +23,12 @@ html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
   font-family: "Titillium Web", sans-serif, Helvetica, Arial;
-  background: whitesmoke;
 }
 h1 {
   font-size: 2.2222222222em; /* 40 / 18 = 2.2222222222 */
   line-height: 1.1em; /* 44 / 40 = 1.1 */
   padding-top: 0.55em; /* 22 / 40 = 0.55 */
   padding-bottom: 0.55em; /* 22 / 40 = 0.55 */
-  color: #8F1001;
 }
 h2 {
   font-weight: bold;
@@ -49,11 +47,6 @@ ul {
 }
 i {
   font-style: italic;
-}
-
-.pub-view {
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
 @media screen and (min-width: 600px) {
