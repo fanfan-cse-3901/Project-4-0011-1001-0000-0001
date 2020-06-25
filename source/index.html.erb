@@ -8,6 +8,7 @@ title: James W. Davis
   <% data.index.intro.each do |node| %>
     <p class="intro"><%= node %></p>
   <% end %>
+  <h2></h2>
 </div>
 <div class="right_pic">
   <img alt="Professor Davis" src="images/davis.jpg">
@@ -18,7 +19,9 @@ title: James W. Davis
 </div>
 <div class="bottom">
   <h3>Noteworthy</h3>
-  <% data.index.noteworthy.each do |node| %>
-    <p><%= node %></p>
-  <% end %>
+  <ul>
+    <% data.index.noteworthy.each do |node| %>
+      <li><%= node %></li>
+    <% end %>
+  </ul>
 </div>

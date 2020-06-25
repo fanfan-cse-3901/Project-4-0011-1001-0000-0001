@@ -1,9 +1,11 @@
 <div class="header">
     <h1><%=data.index.header.name%></h1>
   <%#Print out each of its biography in header %>
-<% data.index.bio.each do |node| %>
-    <p class="header"><%= node %></p>
+<ul>
+  <% data.index.bio.each do |node| %>
+    <li class="header"><%= node %></li>
   <% end %>
-  <p class="header"><a href=<%=data.index.header.college_url %>><%=data.index.header.college %></a></p>
-  <p class="header"><a href=<%=data.index.header.dpt_url %>><%=data.index.header.dpt %></a></p>
+  <li class="header"><a href=<%=data.index.header.college_url %>><%=data.index.header.college %></a></li>
+  <li class="header"><a href=<%=data.index.header.dpt_url %>><%=data.index.header.dpt %></a></li>
+</ul>
 </div>
