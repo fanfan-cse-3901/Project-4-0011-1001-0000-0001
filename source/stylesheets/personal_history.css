@@ -1,0 +1,65 @@
+/* https://www.youtube.com/watch?v=V-rIj30x_LM&feature=youtu.be 1:23:11*/
+html {
+    font-family: consolas;
+    font-size: 1.01666667em; /*em adjusts the size*/
+    line-height: 1.25em;
+    padding: 1.222222em 1.83333333em; /*first number is top bottom second number is left and right*/
+    background: slategrey;
+    text-align-all: left;
+}
+/*next part in video is 1:46:54*/
+h1.personal_info {
+    font-size: 1.6em; /* 28 / 16 = 1.75 */
+    line-height: 1.152 em; /* 32 / 28 = 1.14285714 */
+    padding-top: .5 em; /* 17 / 28 = 0.60714285714 */
+    padding-bottom: 14 px; /* 10 / 28 = 0.35715285714 */
+    color: black;
+}
+h2 {
+    font-weight: bold;
+    font-size: 1.2em; /* 27 / 18 = 1.5 */
+    line-height: 1.2222222222em; /* 33 / 27 = 1.222 */
+    padding-bottom: 0.407407407em; /* 11 / 27 = 0.4074074074 */
+}
+h3 {
+    font-weight: bold;
+    font-size: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+    line-height: 1.375em; /* 33 / 24 = 1.375 */
+    padding-bottom: 0.9166666667em; /* 22 / 24 = 0.9166666667 */
+}
+ul {
+    padding-bottom: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+}
+i {
+    font-style: italic;
+}
+/*use structural pseudo classes first-child on course number*/
+/* Created by Troy Stein: On 06/23/2020 */
+p.course_number
+{
+    font-size: 1 em; /* 25/24 = 1.04166666666667*/
+    font-weight: bold;
+    padding-top: .66666667em/* 16/24 = .6666666667 */
+}
+/* Creates split screen */
+@media screen and (min-device-width: 1000px) {
+    .aleft {
+        width: 50%;
+        z-index: 1;
+        overflow-x: hidden;
+    }
+    .tright {
+        width: 50%;
+        z-index: 1;
+        overflow-x: hidden;
+    }
+    .appointments {
+        padding-right: 25%;
+        padding-left: 5%
+    }
+
+    .teaching {
+        padding-left: 25%;
+        padding-right: 5%;
+    }
+}

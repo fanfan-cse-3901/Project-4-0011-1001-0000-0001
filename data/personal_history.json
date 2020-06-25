@@ -1,0 +1,319 @@
+{
+  "Appointments": {
+  "Full Professor": {
+    "status": "Present",
+    "position": "Full Professor",
+    "office": "Dept. of Computer Science and Engineering",
+    "workplace": "OSU",
+    "url": "N/A"
+  },
+  "Coordinator": {
+    "status": "Present",
+    "position": "Coordinator",
+    "office": "Undergraduate Research (CSE)",
+    "workplace": "OSU",
+    "url": "https://cse.osu.edu/current-students/undergraduate-research"
+  },
+  "Chair": {
+    "status": "Present",
+    "position": "Chair",
+    "office": "Computer and Space Committee (CSE)",
+    "workplace": "OSU",
+    "url": "N/A"
+  },
+  "Member": {
+    "status": "Present",
+    "position": "Member",
+    "office": "Executive Committee (CSE)",
+    "workplace": "OSU",
+    "url": "N/A"
+  },
+  "Associate Professor": {
+    "status": "2005 - 2013",
+    "position": "Associate Professor",
+    "office": "Dept. of Computer Science and Engineering",
+    "workplace": "OSU",
+    "url": "N/A"
+  },
+  "Assistant Professor": {
+    "status": "2000 - 2005",
+    "position": "Assistant Professor",
+    "office": "Dept. of Computer Science and Engineering",
+    "workplace": "OSU",
+    "url": "N/A"
+  }
+},
+  "Teaching": {
+  "2020-2021": {
+  "year": "2020-2021",
+  "CSE 5524": {
+  "course": "CSE 5524",
+  "course_name": "Computer Vision",
+  "semester": "Autumn"
+  }
+  },
+  "2019-2020": {
+  "year": "2019-2020",
+  "CSE 5524": {
+  "course": "CSE 5524",
+  "course_name": "Computer Vision",
+  "semester": "Autumn"
+  },
+  "CSE 5052": {
+  "course": "CSE 5052",
+  "course_name": "Artificial Intelligence for Non-Majors",
+  "semester": "Spring"
+  }
+  },
+  "2018-2019": {
+  "year": "2018-2019",
+  "CSE 5524": {
+  "course": "CSE 5524",
+  "course_name": "Computer Vision",
+  "semester": "Autumn"
+  },
+  "CSE 5052": {
+  "course": "CSE 5052",
+  "course_name": "Artificial Intelligence for Non-Majors",
+"semester": "Spring"
+}
+},
+"2017-2018": {
+"year": "2017-2018",
+"CSE 5524": {
+"course": "CSE 5524",
+"course_name": "Computer Vision",
+"semester": "Autumn"
+},
+"CSE 5052": {
+"course": "CSE 5052",
+"course_name": "Artificial Intelligence for Non-Majors",
+"semester": "Spring"
+}
+},
+"2016-2017": {
+"year": "2016-2017",
+"CSE 5524": {
+"course": "CSE 5524",
+"course_name": "Computer Vision",
+"semester": "Autumn"
+},
+"CSE 5052": {
+"course": "CSE 5052",
+"course_name": "Artificial Intelligence for Non-Majors",
+"semester": "Spring"
+}
+},
+"2015-2016": {
+"year": "2015-2016",
+"information": "On Sabbatical"
+},
+"2014-2015": {
+"year": "2014-2015",
+"CSE 5524": {
+"course": "CSE 5524",
+"course_name": "Computer Vision For HCI",
+"semester": "Autumn"
+},
+"CSE 5052": {
+"course": "CSE 5052",
+"course_name": "Intro Artificial Intelligence for Non-Majors",
+"semester": "Spring"
+}
+},
+"2013-2014": {
+"year": "2013-2014",
+"CSE 5524": {
+"course": "CSE 5524",
+"course_name": "Computer Vision for HCI",
+"semester": "Autumn"
+},
+"CSE 5052": {
+"course": "CSE 5052",
+"course_name": "Intro Artificial Intelligence for Non-Majors",
+"semester": "Spring"
+}
+},
+"2012-2013": {
+"year": "2012-2013",
+"CSE 5524": {
+"course": "CSE 5524",
+"course_name": "Computer Vision for Human-Computer Interaction",
+"semester": "Autumn"
+},
+"CSE 4521": {
+"course": "CSE 5052",
+"course_name": "Intro Artificial Intelligence for Non-Majors",
+"semester": "Spring"
+}
+},
+"2011-2012": {
+"year": "2011-2012",
+"CSE 634": {
+"course": "CSE 634",
+"course_name": "Computer Vision for Human-Computer Interaction",
+"quarter": "Autumn"
+},
+"CSE 788": {
+"course": "CSE 788",
+"course_name": "Computer Vision Seminar",
+"quarter": "Winter"
+}
+},
+"2010-2011": {
+"year": "2010-2011",
+"CSE 634": {
+"course": "CSE 634",
+"course_name": "Computer Vision for Human-Computer Interaction",
+"quarter": "Autumn"
+},
+"CSE 630": {
+"course": "CSE 630",
+"course_name": "Artificial Intelligence",
+"quarter": "Winter"
+}
+},
+"2009-2010": {
+"year": "2009-2010",
+"CSE 634": {
+"course": "CSE 634",
+"course_name": "Computer Vision for Human-Computer Interaction",
+"quarter": "Autumn"
+},
+"CSE 788": {
+"course": "CSE 788",
+"course_name": "Computer Vision Seminar",
+"quarter": "Winter"
+}
+},
+"2008-2009": {
+"year": "2008-2009",
+"CSE 634": {
+"course": "CSE 634",
+"course_name": "Computer Vision for Human-Computer Interaction",
+"quarter": "Autumn"
+},
+"CSE 630": {
+"course": "CSE 630",
+"course_name": "Artificial Intelligence",
+"quarter": "Winter"
+}
+},
+"2007-2008": {
+"year": "2007-2008",
+"information": "On Sabbatical"
+},
+"2006-2007": {
+"year": "2008-2009",
+"CSE 634": {
+"course": "CSE 634",
+"course_name": "Computer Vision for Human-Computer Interaction",
+"quarter": "Autumn"
+},
+"CSE 630": {
+"course": "CSE 630",
+"course_name": "Artificial Intelligence",
+"quarter": "Winter"
+}
+}
+,
+"2005-2006": {
+"year": "2005-2006",
+"CSE 634": {
+"course": "CSE 634",
+"course_name": "Computer Vision for Human-Computer Interaction",
+"quarter": "Autumn"
+},
+"CSE 630": {
+"course": "CSE 630",
+"course_name": "Artificial Intelligence",
+"quarter": "Winter"
+},
+"CSE 788": {
+"course": "CSE 788",
+"course_name": "Seminar on Advanced Video Surveillance",
+"quarter": "Winter"
+}
+},
+"2004-2005": {
+"year": "2004-2005",
+"CSE 694I": {
+"course": "CSE 694I",
+"course_name": "Introduction to Computer Vision",
+"quarter": "Autumn"
+},
+"CSE 630": {
+"course": "CSE 630",
+"course_name": "Artificial Intelligence",
+"quarter": "Winter"
+}
+},
+"2003-2004": {
+"year": "2003-2004",
+"CIS 694I": {
+"course": "CIS 694I",
+"course_name": "Computer Vision for Human-Computer Interaction",
+"quarter": "Autumn"
+},
+"CIS 630": {
+"course": "CIS 630",
+"course_name": "Artificial Intelligence",
+"quarter": "Winter"
+},
+"CIS 788": {
+"course": "CIS 788",
+"course_name": "Seminar on Advanced Video Surveillance",
+"quarter": "Winter"
+}
+},
+"2002-2003": {
+"year": "2002-2003",
+"CIS 694I": {
+"course": "CIS 694I",
+"course_name": "Computer Vision and Pattern Recognition",
+"quarter": "Winter"
+},
+"CIS 630A": {
+"course": "CIS 630",
+"course_name": "Artificial Intelligence",
+"quarter": "Autumn"
+},
+"CIS 630B": {
+"course": "CIS 630",
+"course_name": "Artificial Intelligence",
+"quarter": "Spring"
+}
+},
+"2001-2002": {
+"year": "2001-2002",
+"CIS 788.04Z": {
+"course": "CIS 694I",
+"course_name": "Computer Vision and Human-Computer Interaction",
+"quarter": "Autumn"
+},
+"CIS 630": {
+"course": "CIS 630",
+"course_name": "Artificial Intelligence",
+"quarter": "Spring"
+}
+},
+"2000-2001": {
+"year": "2000-2001",
+"CIS 788.04Y": {
+"course": "CIS 788.04Y",
+"course_name": "Motion Understanding",
+"quarter": "Autumn"
+},
+"CIS 630": {
+"course": "CIS 630",
+"course_name": "Artificial Intelligence",
+"quarter": "Spring"
+},
+"CIS 731": {
+"course": "CIS 731",
+"course_name": "Knowledge Systems",
+"quarter": "Spring"
+}
+}
+}
+}

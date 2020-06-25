@@ -1,0 +1,65 @@
+<!--Created by Troy Stein on 06/20/2020 sets up personal history css file-->
+<!-- this is the html.erb file -->
+<!-- Reads in .json file -->
+---
+layout: "personal_history"
+title: "James W. Davis, Personal History"
+---
+<% json =  JSON.parse(File.read('./data/personal_history.json'))%>
+<!--<html xmlns="http://www.w3.org/1999/html">-->
+ <!-- different for each page  <body>-->
+<!--Display Teaching and Appointments -->
+<div class ="aleft half appointments">
+<h1 class="personal_info">Appointments</h1>
+<!-- appointments ruby code -->
+  <a>
+<p class="course_number">Years/Status</p>
+<p>Position</p>
+<p>Department</p>
+<p>University</p>
+<p>url</p>
+<!-- stores the bulleted list from the ruby code -->
+<ul>
+  <% json['Appointments'].each do |posn| %>
+    <li>
+  <% posn[1].each do |key,value| %>
+        <%if key == 'status'%>
+      <p class="course_number"><%= value%></p>
+          <%end %>
+        <p><%= value if key != 'status' && key != 'url'%></p>
+        <% if key == 'url' && value != 'N/A' %>
+        <p><a href = <%= value%> > <%=value%>  </a></p>
+          <%end %>
+      <%end%>
+    </li>
+  <%end %>
+</ul>
+</div>
+<div class="teaching tright">
+<h1 class="personal_info">Teachings</h1>
+
+<h2>School Year</h2>
+  <p class="course_number"> Course Number </p>
+  Course Name (Semester/Quarter)
+<ul>
+  <% json['Teaching'].each do |year|%>
+  <li>
+    <%year[1].each do |key,val| %>
+      <%if key.to_s== 'year' %>
+        <h2><%=val.to_s%></h2>
+      <%elsif key.to_s == 'information'  %>
+          <p><%=val.to_s %> </p>
+        <%else%>
+          <%val.each do |key1, val1| %>
+          <%if key1.to_s == 'course' %>
+              <p class="course_number"> <%=val1.to_s %></p>
+              <%else %>
+                <%=val1.to_s %>
+            <%end%>
+            <%end %>
+            <%end %>
+          <%end %>
+      <%end%>
+  </li>
+</ul>
+</div>
