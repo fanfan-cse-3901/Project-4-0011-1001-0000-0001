@@ -1,0 +1,11 @@
+Navigation:
+  - title: "Home"
+    link: "./index.html"
+  - title: "Publications"
+    link: "./publications.html"
+  - title: "Personal History"
+    link: "./person_history.html"
+  - title: "Media and Press"
+    link: "./media_press.html"
+  - title: "People"
+    link: "./people.html"
