@@ -1,38 +1,12 @@
-body {
-  background-color: lavender;
-  color: rebeccapurple;
-  margin: 0px;
-  padding: 0px;
-}
-h1 {
-  padding: 0px;
-  margin: 0px 0px;
-  text-align: center;
-  /* background: #6F0BBF; */
-  font-size: 30px;
-  font-family: Arial;
-}
-li.header {
-  padding: 0px;
-  margin: 2px 0px;
-  text-align: center;
-  /*background: #6F0BBF;*/
-  color: rebeccapurple;
-  font-size: 10px;
-}
-a {
-  padding: 0px;
-  /*margin: 0px 0px;*/
-  text-align: left;
-  /*background: #6F0BBF;*/
-  color: rebeccapurple;
-  font-size: 10px;
-}
+/*
+File created 06/23/2020 by Amanda Cheng.
+ */
 *{
   box-sizing: border-box;
 }
 
 p.intro {
+  background-color: #7cc0ae;
   float: right;
   margin: 10px 5px 0px 0px;
   width: 82%;
@@ -73,6 +47,7 @@ div.right_pic h2{
   text-align: left;
 }
 div.right_pic p {
+  background-color: #7cc0ae;
   margin: 20px 0px 10px 200px;
   width: 50%;
   text-align: left;
@@ -82,24 +57,25 @@ Noteworthy section
  */
 div.bottom h3{
   font-weight: bold;
-  padding: 50px 0px 40px 560px;
+  padding: 40px 0px 30px 450px;
   /*margin: 150px 0px 40px 560px;*/
   width: 50%;
   text-align: left;
 }
 div.bottom li{
-  width: 50%;
+  width: 100%;
   font-size: 12px;
-  margin: 5px 50px 10px 250px;
+  margin: 10px;
+  padding: 0px;
+  /*margin: 5px 50px 10px 250px;*/
   text-align: center;
 }
 div.right_pic{
   margin: 0px 0px;
-  padding: 10px 10px 100px 10px;
+  padding: 10px 10px 140px 10px;
 }
 div.bottom{
-  margin: 0px 100px;
+  margin: 0px 150px;
   padding: 0px;
-
   border: solid black 2px;
 }
