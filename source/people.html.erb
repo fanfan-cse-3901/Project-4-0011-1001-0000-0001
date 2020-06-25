@@ -1,155 +1,78 @@
-<!--Created on 06/23/2020 by Prachiti Garge-->
-<!--Edited on 06/24/2020 by Prachiti Garge: Added data using sections-->
-<!--Has code for People html page-->
-<!--Has been validated using validator.w3.org-->
+---
+layout: "layout"
+title: "James W. Davis, People"
+---
 
-<!DOCTYPE html>
-<html lang="en-US">
-  <!--Head section-->
-  <head>
-    <meta charset="utf-8" />
-    <title>People, Jim Davis</title>
-    <!--Check what else is left in head.-->
-    <meta/>
-    <link>
-  </head>
-  <!--Body section with the contents-->
-  <body>
-    <h1>People</h1>
-    <!--Section with current students-->
-    <div id="cur_stu">
-
-      <!--Leftmost box-->
-      <div id="cur_word">Current students</div>
-
-      <!--Middle box-->
-      <div id="cur_levels">
-        <!--Section with BS-->
-        <div id="cur_bs_word">B.S.</div>
-        <!--Section with MS-->
-        <div id="cur_ms_word">M.S.</div>
-        <!--Section with PhD-->
-        <div id="cur_phd_word">Ph.D.</div>
-
-        <!--Rightmost box-->
-        <div id="cur_names">
-          <!--Section with BS students-->
-          <div id="cur_bs">
-            <ul>
-              <li class="names"><u>James Enouen</u></li>
-              <li class="names"><u>Isaac Zachmann</u> (ECE)</li>
-            </ul>
-          </div>
-          <!--Section with MS students-->
-          <div id="cur_ms">
-            <ul>
-              <li class="names"><u>Jamie Cunningham</u>, B.S./M.S. student</li>
-            </ul>
-          </div>
-          <!--Section with PhD students-->
-          <div id="cur_phd">
-            <ul>
-              <li class="names"><u>Tong Liang</u></li>
-              <li class="names"><u>Logan Frank</u>, M.S./Ph.D student</li>
-              <li class="names"><u>Ash Radhakrishnan</u>, M.S./Ph.D student</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+<!-- Created on 06/25/2020 by Prachiti Garge -->
+<!-- Original file I made had to be scraped since I hard coded into HTML -->
+<!-- Gets proper data file -->
+<% json =  JSON.parse(File.read('./data/people.json')) %>
+<h1 class="content-padding">People</h1>
+<div class="flex-parent content-padding people">
+  <!-- Upper div -->
+    <!-- For three levels of students -->
+    <!-- For B.S. -->
+    <div class="leftSide flex-child">
+      <h2>Current B.S. Students</h2>
+      <ul>
+        <% json['B.S_cur'].each do |name, qual| %>
+          <!-- Print each person's name and qualification -->
+          <li><em class="per_name"><%= name %></em><% if qual!="" %><br><em class="per_qual"<%= qual %></em><%end%></li>
+        <% end %>
+      </ul>
     </div>
 
-    <!--Section with alumni-->
-    <div id="alum">
-      <!--Leftmost box-->
-      <div id="alum_word">Alumni</div>
-
-      <!--Middle box-->
-      <div id="alum_levels">
-        <!--Section with BS-->
-        <div id="alum_bs_word">B.S.</div>
-        <!--Section with MS-->
-        <div id="alum_ms_word">M.S.</div>
-        <!--Section with PhD-->
-        <div id="alum_phd_word">Ph.D.</div>
-      </div>
-
-      <!--Rightmost box-->
-      <div id="alum_names">
-        <!--Section with BS students-->
-        <div id="alum_bs">
-          <ul>
-            <li class = "names"><u>Brett Whitford</u>, B.S. student<br>
-              B.S. Honor's Thesis: "Weakly Supervised Learning for Semantic Segmentation", 2018.</li>
-            <li class="names"><u>Chuhan Feng</u>, B.S. student</li>
-            <li class="names"><u>Dan Marchese</u><br>
-              Undergraduate Honors Thesis: "A Framework for Using Custom Features to Colorize
-              Grayscale Images", May 2016. (Now at Amazon)</li>
-            <li class="names"><u>Jeremy Ledonne</u><br>
-              Undergraduate research assistant. Graduated 2015.</li>
-            <li class="names"><u>Ryan Niemocienski</u><br>
-              Undergraduate research assistant, 2013-2014.</li>
-            <li class="names"><u>Kyle Salberg</u><br>
-              Undergraduate research assistant. Graduated June 2012.</li>
-            <li class="names"><u>Michael Schoenberg</u><br>
-              Undergraduate research assistant. Graduated June 2012. (Now at Microsoft)</li>
-            <li class="names"><u>Ronak Buch</u><br>
-              Undergraduate research assistant. Graduated June 2012. (Now at UIUC)</li>
-            <li class="names"><u>Karl Salva</u><br>
-              Undergraduate research assistant. Graduated March 2009.</li>
-            <li class="names"><u>Robin Tan</u><br>
-              Undergraduate Honors Thesis: "Human-Content Video Coding", March 2002.</li>
-          </ul>
-        </div>
-        <!--Section with MS students-->
-        <div id="alum_ms">
-          <ul>
-            <li class="names"><u>Sam Lerner</u>, B.S./M.S. student<br></li>
-            <li class="names"><u>Chris Menart</u>, M.S. student<br>
-              M.S. Thesis: "Global-Context Refinement for Semantic Image Segmentation", 2018. (Now at AFRL)</li>
-            <li class="names"><u>Debanjan Nandi</u>, M.S. student<br></li>
-            <li class="names"><u>Mo Akbar</u>, B.S./M.S. student<br></li>
-            <li class="names"><u>Josh Sandvick</u>, B.S/M.S. student<br>
-              M.S. Thesis: "Machine Translation Through the Creation of a Common Embedding Space", 2018.</li>
-            <li class="names"><u>Rohith Savaram</u><br>
-              M.S. Project, May 2016. (now at Expedia)</li>
-            <li class="names"><u>Manjari Akella</u><br>
-              M.S. Project, May 2015. (Now at IBM) </li>
-            <li class="names"><u>Ryan Feather</u><br>
-              MS Thesis: "Tracking and Activity Analysis in Wide Area Aerial Surveillance Video", August 2011.</li>
-            <li class="names"><u>Matt Nedrich</u><br>
-              MS Thesis: "Detecting Behavioral Zones in Local and Global Camera Views", June 2011. (Now at Intel)</li>
-            <li class="names"><u>Alex Morison</u><br>
-              MS Thesis: "An Adaptive Focus-of-Attention Model for Video Surveillance and Monitoring", August 2006. (Now at OSU/AFRL)</li>
-            <li class="names"><u>Vignesh Kannappan</u><br>
-              MS Thesis: "Automatic Temporal Segmentation of
-              Human Actions", June 2003. (Now at Microsoft)</li>
-            <li class="names"><u>Stephanie Taylor</u><br>
-              MS Thesis: "Computer Analysis and Recognition of Walking Movements", June 2002.</li>
-          </ul>
-        </div>
-        <!--Section with PhD students-->
-        <div id="alum_phd">
-          <ul>
-            <li class="names"><u>Joe Barker</u>, Ph.D. student<br></li>
-            <li class="names"><u>Daniya Zamalieva</u><br>
-              Ph.D. Thesis: "Transformational Models for Background Subtraction with Moving Cameras", September 2014. (Now at Google)</li>
-            <li class="names"><u>Kevin Streib</u><br>
-              Ph.D. Thesis: "Improved Graph-based Clustering with Applications in Computer Vision and Behavior Analysis", March 2012. (and Post-Doc with Davis)</li>
-            <li class="names"><u>Karthik Sankaranarayanan</u><br>
-              Ph.D. Thesis: "Multiple Instance Learning for Localization and Tracking of Persistent Targets", August 2011. (Now at IBM India)</li>
-            <li class="names"><u>Mark Keck</u><br>
-              Ph.D. Thesis: "Occlusion Recovery and Reasoning for 3D Surveillance", August 2009. (Now at BAE)</li>
-            <li class="names"><u>Ambrish Tyagi</u><br>
-              Ph.D. Thesis: "Layered Tracker Switching for Visual Surveillance", August 2008. (Now at STI - Omron Scientific Technologies)</li>
-            <li class="names"><u>Vinay Sharma</u><br>
-              Ph.D. Thesis: "Simultaneous Object Detection and Segmentation using
-              Top-down and Bottom-up Processing", November 2007. (Now at Texas Instruments)</li>
-            <li class="names"><u>Hui Gao</u><br>
-              Ph.D. Thesis: "Extracting Key Features for Analysis and
-              Recognition in Computer Vision", February 2006. (Now at Microsoft)</li>
-          </ul>
-        </div>
-      </div>
+    <!-- For M.S. -->
+    <div class="inCentre flex-child">
+      <h2>Current M.S. Students</h2>
+      <ul>
+        <% json['M.S_cur'].each do |name, qual| %>
+          <!-- Print each person's name and qualification -->
+          <li><em class="per_name"><%= name %></em><% if qual!="" %><br><em class="per_qual"<%= qual %></em><%end%></li>
+        <% end %>
+      </ul>
     </div>
-  </body>
-</html>
+
+    <!-- For Ph.D. -->
+    <div class="rightSide flex-child">
+      <h2>Current Ph.D. Students</h2>
+      <ul>
+        <% json['Ph.D_cur'].each do |name, qual| %>
+          <!-- Print each person's name and qualification -->
+          <li><em class="per_name"><%= name %></em><% if qual!="" %><br><em class="per_qual"<%= qual %></em><%end%></li>
+        <% end %>
+      </ul>
+    </div>
+  <!-- For three levels of students -->
+  <!-- For B.S. -->
+  <div class="leftSide flex-child">
+    <h2>B.S. Alumni</h2>
+    <ul>
+      <% json['B.S_alum'].each do |name,details| %>
+         <!-- Print out person's name, qual and topic on separate lines -->
+         <li><em class="per_name"><%= name %></em><% if details[0]!="" %><br><em class="per_qual"<%= details[0] %></em><%end%><% if details[1]!="" %><br><em class="per_topic"><%= details[1] %></em><%end%></li>
+      <% end %>
+    </ul>
+  </div>
+  <!-- For M.S. -->
+  <div class="inCentre flex-child">
+    <h2>M.S. Alumni</h2>
+    <ul>
+      <% json['M.S_alum'].each do |name, details| %>
+        <!-- Print out person's name, qual and topic on separate lines -->
+        <li ><em class="per_name"><%= name %></em><% if details[0]!="" %><br><em class="per_qual"><%= details[0] %></em><%end%><% if details[1]!="" %><br><em class="per_topic"><%= details[1] %></em><%end%></li>
+      <% end %>
+    </ul>
+  </div>
+  <!-- For Ph.D. -->
+  <div class="rightSide flex-child">
+    <h2>Ph.D. Alumni</h2>
+    <ul>
+      <% json['Ph.D_alum'].each do |name, details| %>
+        <!-- Print out person's name, qual and topic on separate lines -->
+        <li ><em class="per_name"><%= name %></em><% if details[0]!="" %><br><em class="per_qual"><%= details[0] %></em><%end%><% if details[1]!="" %><br><em class="per_topic"><%= details[1] %></em><%end%></li>
+      <% end %>
+    </ul>
+  </div>
+
+</div>
