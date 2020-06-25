@@ -8,8 +8,8 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Middleman" %></title>
     <%= stylesheet_link_tag "screen.css" %>
-    <!--<link rel="stylesheet" href="//basehold.it/22" />-->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="#//basehold.it/22" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&amp;display=swap" rel="stylesheet" />
     <%#= stylesheet_link_tag "site" %>
   </head>
   <body>
@@ -17,7 +17,7 @@
      <%= partial "header" %>
      <%= partial "navigation" %>
     </header>
-    <br>
+    <br />
     <%= yield %>
   </body>
 </html>

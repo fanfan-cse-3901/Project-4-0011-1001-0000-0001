@@ -26,16 +26,16 @@ html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
   background-color: whitesmoke;
-  font-family: "Oswald", sans-serif;
+  font-family: Oswald, sans-serif;
   align-content: center;
   margin: auto;
 }
 /* Created on 06/25/2020 by Yifan Yao */
 h1 {
-  font-size: 2.2222222222em; /* 40 / 18 = 2.2222222222 */
-  line-height: 1.1em; /* 44 / 40 = 1.1 */
-  padding-top: 0.55em; /* 22 / 40 = 0.55 */
-  padding-bottom: 0.55em; /* 22 / 40 = 0.55 */
+  font-size: 1.6666666667em; /* 30 / 18 = 1.6666666667 */
+  line-height: 1.4666666667em; /* 44 / 30 = 1.4666666667 */
+  padding-top: 0.7333333333em; /* 22 / 30 = 0.7333333333 */
+  padding-bottom: 1.8333333333em; /* 55 / 30 = 1.8333333333 */
 }
 /* Created on 06/25/2020 by Yifan Yao */
 h2 {
@@ -51,6 +51,10 @@ h3 {
   line-height: 1.375em; /* 33 / 24 = 1.375 */
   padding-bottom: 0.9166666667em; /* 22 / 24 = 0.9166666667 */
 }
+a {
+  color: dimgray;
+  text-decoration: none;
+}
 /* Created on 06/25/2020 by Yifan Yao */
 ul {
   padding-bottom: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
@@ -64,11 +68,6 @@ body {
   color: #423f40;
   text-align: center;
 }
-/* Created on 06/25/2020 by Yifan Yao */
-h1 {
-  padding-bottom: 50px;
-  font-size: 30px;
-}
 /* Created on 06/25/2020 by Kevin Dong */
 .content-padding {
   padding-left: 5%;
@@ -78,13 +77,13 @@ h1 {
   background: #8e1002;
 }
 li.header {
-  margin: 2px 0px;
+  margin: 0 0;
   text-align: center;
   color: #ffffff;
-  font-size: 10px;
+  font-size: 0.5555555556em; /* 10 / 18 = 0.5555555556 */
 }
-div.header h1{
-  padding: 0px;
+div.header h1 {
+  padding: 0;
   color: #ffffff;
 }
 /*
@@ -92,7 +91,7 @@ Created 06/23/2020 by Amanda Cheng.
 Edited 06/24/2020 by Amanda Cheng: introduced new stylizations for additional elements in index template.
 Edited 06/25/2020 by Amanda Cheng: Changed margins to keep everything in order.
  */
-*{
+* {
   box-sizing: border-box;
 }
 /* Created 06/23/2020 by Amanda Cheng */
@@ -107,11 +106,11 @@ img {
   display: inline-block;
   height: auto;
   width: auto;
-  max-height:600px;
-  max-width: 400px;
+  max-height: 33.3333333333em; /* 600 / 18 = 33.3333333333 */
+  max-width: 22.2222222222em; /* 400 / 18 = 22.2222222222 */
 }
 /* Created 06/23/2020 by Amanda Cheng */
-div.left_pic{
+div.left_pic {
   font-weight: bold;
   text-align: left;
   padding: 5% 5%;
@@ -126,7 +125,7 @@ div.left_pic{
   float: right;
   height: auto;
   width: auto;
-  max-height: 500px;
+  max-height: 27.7777777778em; /* 500 / 18 = 27.7777777778 */
 }
 /* Created 06/23/2020 by Amanda Cheng */
 /* Noteworthy section */
@@ -138,8 +137,9 @@ div.left_pic{
   display: inline-block;
 }
 /* Created 06/23/2020 by Amanda Cheng */
-.bottom li{
-  font-size: 12px;
+.bottom li {
+  font-size: 0.6666666667em; /* 12 / 18 = 0.6666666667 */
+  padding-bottom: 0.9166666667em; /* 11 / 12 = 0.9166666667 */
 }
 
 /* Created on 06/25/2020 by Prachiti Garge */
@@ -150,21 +150,21 @@ div.left_pic{
 
 /* Created on 06/25/2020 by Prachiti Garge */
 /* For names */
-.people .per_name{
+.people .per_name {
   font-weight: bold;
 }
 /* Created on 06/25/2020 by Prachiti Garge */
 /* For qualifications */
-.people .per_qual{
-  font-style:  italic;
+.people .per_qual {
+  font-style: italic;
 }
 /* Created on 06/25/2020 by Prachiti Garge */
 /* For topic */
-.people .per_topic{
+.people .per_topic {
   font-weight: inherit;
 }
 /* Created on 06/25/2020 by Prachiti Garge */
-.people li{
+.people li {
   list-style-type: circle;
 }
 
@@ -178,7 +178,7 @@ div div {
   margin: auto;
   padding: 0;
   overflow: hidden;
-  background-color: #8e1002;;
+  background-color: #8e1002;
   width: 100%;
 }
 /* Created on 06/25/2020 by Yifan Yao */
