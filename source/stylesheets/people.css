@@ -1,29 +1,11 @@
 /* Created on 06/25/2020 by Prachiti Garge */
 /* Contains specific styling for people html page */
 
-/* For the whole page */
-/* Changes size according to devices/screens */
-@media screen and (min-width: 600px) {
-  #left {
-    padding-right: 5%;
-  }
-  #right {
-    padding-left: 5%;
-  }
-  .flex-container {
-    display: flex;
-    flex-flow: row wrap;
-  }
-}
-
-.people h2{
+.people h2 {
   font-weight: bold;
-  text-align: center;
 }
-
-.flex-container{
-  display: flex;
-  flex-flow: row wrap;
+.flex-child {
+  width: 30%;
 }
 /* For names */
 .people .per_name{
@@ -39,7 +21,17 @@
 .people .per_topic{
   font-weight: inherit;
 }
-
 .people li{
   list-style-type: circle;
+}
+
+/* For the whole page */
+/* Changes size according to devices/screens */
+@media screen and (min-width: 600px) {
+  #left {
+    padding-right: 5%;
+  }
+  #right {
+    padding-left: 5%;
+  }
 }
