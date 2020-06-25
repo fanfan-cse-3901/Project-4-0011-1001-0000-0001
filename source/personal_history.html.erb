@@ -1,10 +1,10 @@
+---
+layout: "layout"
+title: James W. Davis, Personal History
+---
 <!--Created by Troy Stein on 06/20/2020 sets up personal history css file-->
 <!-- this is the html.erb file -->
 <!-- Reads in .json file -->
----
-layout: "personal_history"
-title: "James W. Davis, Personal History"
----
 <% json =  JSON.parse(File.read('./data/personal_history.json'))%>
 <!--<html xmlns="http://www.w3.org/1999/html">-->
  <!-- different for each page  <body>-->
@@ -12,7 +12,6 @@ title: "James W. Davis, Personal History"
 <div class ="aleft half appointments">
 <h1 class="personal_info">Appointments</h1>
 <!-- appointments ruby code -->
-  <a>
 <p class="course_number">Years/Status</p>
 <p>Position</p>
 <p>Department</p>
@@ -28,13 +27,14 @@ title: "James W. Davis, Personal History"
           <%end %>
         <p><%= value if key != 'status' && key != 'url'%></p>
         <% if key == 'url' && value != 'N/A' %>
-        <p><a href = <%= value%> > <%=value%>  </a></p>
+        <p><a href="<%= value%>"><%=value%></a></p>
           <%end %>
       <%end%>
     </li>
   <%end %>
 </ul>
 </div>
+
 <div class="teaching tright">
 <h1 class="personal_info">Teachings</h1>
 
