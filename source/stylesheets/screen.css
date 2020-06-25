@@ -6,13 +6,62 @@
 /* Keep reset CSS to one minified line */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}html,.reset{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
+/* File Created on 06/24/2020 by Kevin Dong */
+/* File Edited on 06/24/2020 by Amanda Cheng, Kevin Dong, Prachiti Garge, Yifan Yao, Troy Stein: Collaborated on style */
+body {
+  background-color: #7cc0ae;
+  color: #423f40;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+h1 {
+  padding: 0px;
+  margin: 0px 0px;
+  background: #e4a67c;
+  color: #ffffff;
+  display: inline-block;
+  border: 3px solid #423f40;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+}
+a {
+  padding: 0px;
+  /*margin: 0px 0px;*/
+  text-align: left;
+  /*background: #6F0BBF;*/
+  font-size: 10px;
+}
+li.header {
+  padding: 0px;
+  margin: 2px 0px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 10px;
+}
+div p {
+  background-color: #e2a57c;
+  color: #ffffff;
+}
+header {
+  border-bottom: solid 3px ;
+  border-bottom-color: #423f40;
+}
 
+.content-padding {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+div div {
+  text-align: left;
+}
 #navigation {
   position: relative;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: darkred;
+  background-color: #e6a77c;
   width: 100%;
 }
 #navigation li {
@@ -20,13 +69,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 #navigation li a {
   display: block;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 0.6111111111em 1.2222222222em;
   text-decoration: none;
 }
 #navigation li a:hover {
-  background-color: #8F1001;
+  background-color: #5c5b61;
 }
 
 @media screen and (min-width: 600px) {
