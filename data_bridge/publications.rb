@@ -34,11 +34,11 @@ page.search('//ul/li').each do |i|
   end
 
   item.each do |str|
-    if italic_str != '' &&
-        !str.match(%r{https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)}) &&
-        !str.match(%r{Publications/})
-      str.replace(str.gsub italic_str, "<i>#{italic_str}</i>")
-    end
+    next unless italic_str != '' &&
+                !str.match(%r{https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)}) &&
+                !str.match(%r{Publications/})
+
+    str.replace str.gsub(italic_str, "<i>#{italic_str}</i>")
   end
 
   # put item into event_list
