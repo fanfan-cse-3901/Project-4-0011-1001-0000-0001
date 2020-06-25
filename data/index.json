@@ -1,0 +1,51 @@
+{
+  "header": {
+    "name": "Jim Davis",
+    "dpt": "Dept. of Computer Science and Engineering",
+    "dpt_url": "https://cse.osu.edu/",
+    "college": "Ohio State University",
+    "college_url": "https://www.osu.edu/"
+  },
+  "bio": [
+    "Ph.D. MIT, 2000",
+    "491 Dreese Laboratories, 2015 Neil Avenue, Columbus, OH 43210",
+    "Office: 614-292-1553 (Lab: 614-292-5137)",
+    "Fax: 614-292-2911",
+    "email: jwdaviscse.ohio-state.edu",
+    "http://www.cse.ohio-state.edu/~jwdavis"
+  ],
+  "intro": [
+    "Jim Davis is a Full Professor in the Dept. of Computer Science and Engineering. He received his Ph.D. from the Massachusetts Institute of Technology.",
+    "RESEARCH: His main research areas include Computer Vision, Artificial Intelligence, and Machine Learning with a focus on image/video analysis and automated surveillance. He has received over $3M in research funding (to date) from the National Science Foundation (including a prestigious CAREER award), U.S. Air Force, Los Alamos National Lab, U.S. Army Night Vision Laboratory, Intel, and Ohio Board of Regents.",
+    "TEACHING: Prof. Davis offers classes in Computer Vision (CSE 5524) and Artificial Intelligence (CSE 5052) at Ohio State University. The Artificial Intelligence course was specifically designed to fill a need and outreach to the large body of non-CSE students interested in the topic. SERVICE: In addition to his Full Professor duties and service in the professional societies, he also serves in the CSE Dept. as the Coordinator for Undergraduate Research, the Chair of the Computer and Space Committee, and a Member of the Executive Committee. "
+  ],
+  "noteworthy": [
+      "Consultant to Mimecast (2020)",
+      "Recipient of 2019 Lutron Electronic’s Ruth and Joel Spira Teaching Award",
+      "Recipient of 2015 OSU College of Engineering Innovators Award",
+      "Launched Polarity Maximizer commercial software and Audiomere (www.Audiomere.com)",
+      "Promoted to Full Professor, September 2013.",
+      "Recipient of 2012 OSU College of Engineering Lumley Research Award",
+      "Chair, Computer Committee, 2012 - current",
+      "Workshop co-Chair, IEEE Conference on Computer Vision and Pattern Recognition (2014)",
+      "Best Paper Award: \"Attention-based Target Localization using Multiple Instance Learning\", International Symposium on Visual Computing, November 2010",
+      "IEEE Computer Vision and Pattern Recognition Reviewer Award 2010",
+      "CSE Teaching Award 2009-2010.",
+      "Co-Program Chair, IEEE International Conference on Advanced Video and Signal based Surveillance (Sept. 2010)",
+      "Co-General Chair, IEEE Workshop on Motion and Video Computing (Dec. 2009)",
+      "Co-Chair, for IEEE Workshop on Object Tracking and Classification in and Beyond the Visible Spectrum (OTCBVS), June 22, 2006",
+      "Promoted to Associate Professor with Tenure, October 2005",
+      "Guest Editor (w/ Riad Hammoud) for CVIU Special Issue on Advances in Vision Algorithms and Systems Beyond the Visible Spectrum",
+      "Appointed as Associate Editor for Machine Vision and Applications journal (May 2005)",
+      "Recipient of 2005 OSU College of Engineering Lumley Research Award",
+      "Benchmark and Website Chair for IEEE Workshop on Object Tracking and Classification in and Beyond the Visible Spectrum (OTCBVS), June 2005",
+      "Recipient of 2003 NSF Career Award (March 2003)",
+      "Lockheed-Martin Best Paper Award: \"A Three-Mode Expressive Feature Model of Action Effort\", IEEE Workshop on Motion and Video Computing, Dec. 5-6, 2002, pp. 139-144."
+    ],
+  "education": [
+      "Massachusetts Institute of Technology, Ph.D., 2000",
+      "Massachusetts Institute of Technology, M.S., 1996",
+      "University of Central Florida, B.S., 1994",
+      "Eastern Florida State College (BCC), A.A., 1992"
+    ]
+}
