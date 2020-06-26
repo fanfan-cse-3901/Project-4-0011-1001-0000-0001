@@ -3,29 +3,30 @@ File created on 06/24/2020 by Kevin Dong
 CSS stylesheet for media_press
 */
 .header-center {
-    color: #8e1002;
-    font-weight: bolder;
-    font-size: 2em; /* 36 / 18 = 2 */
-    line-height: 0;
-    padding-top: 0.6111111111em; /* 22 / 36 = 0.6111111111 */
-    padding-bottom: 1.8333333333em; /* 66 / 36 = 1.8333333333 */
+  color: #8e1002;
+  font-weight: bolder;
+  font-size: 2em; /* 36 / 18 = 2 */
+  line-height: 0.6111111111em; /* 22 / 36 = 0.6111111111 */
+  padding-top: 0.6111111111em; /* 22 / 36 = 0.6111111111 */
+  padding-bottom: 1.8333333333em; /* 66 / 36 = 1.8333333333 */
 }
-
 em {
-    font-weight: bolder;
-    color: black;
+  font-weight: bolder;
+  color: black;
 }
-
 div div h2 {
-    color: black;
-    line-height: 0;
-    padding-top: 0.4074074074em; /* 11 / 27 = 0.4074074074 */
-    padding-bottom: 1.2222222222em; /* 33 / 27 = 1.2222222222 */
-    text-align: center;
+  color: black;
+  padding-top: 0.4074074074em; /* 11 / 27 = 0.4074074074 */
+  padding-bottom: 1.2222222222em; /* 33 / 27 = 1.2222222222 */
+  text-align: center;
+}
+div div li a:visited {
+  color: dimgray;
 }
 div div li a:link {
-    color: #8e1002;
+  color: #8e1002;
 }
-div divli a:visited {
-    color: dimgray;
+.media-press ul li {
+  padding-top: 0.3055555556em; /* 5.5 / 18 = 0.3055555556 */
+  padding-bottom: 0.3055555556em; /* 5.5 / 18 = 0.3055555556 */
 }
