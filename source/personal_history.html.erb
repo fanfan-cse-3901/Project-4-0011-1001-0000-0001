@@ -2,22 +2,23 @@
 layout: "layout"
 title: James W. Davis, Personal History
 ---
-<!--Created by Troy Stein on 06/20/2020 sets up personal history css file-->
-<!-- this is the html.erb file -->
-<!-- Reads in .json file -->
+
+<%# Created by Troy Stein on 06/20/2020 sets up personal history css file %>
+<%#this is the html.erb file %>
+<%# Reads in .json file %>
 <% json =  JSON.parse(File.read('./data/personal_history.json'))%>
-<!--<html xmlns="http://www.w3.org/1999/html">-->
- <!-- different for each page  <body>-->
-<!--Display Teaching and Appointments -->
+<%# <html xmlns="http://www.w3.org/1999/html"> %>
+<%# Different for each page  <body> %>
+<%# Display Teaching and Appointments %>
 <div class ="aleft half appointments">
 <h1 class="personal_info">Appointments</h1>
-<!-- appointments ruby code -->
+<%# appointments ruby code %>
 <p class="course_number">Years/Status</p>
 <p>Position</p>
 <p>Department</p>
 <p>University</p>
 <p>url</p>
-<!-- stores the bulleted list from the ruby code -->
+<%# stores the bulleted list from the ruby code %>
 <ul>
   <% json['Appointments'].each do |posn| %>
     <li>

@@ -73,6 +73,11 @@ body {
   padding-left: 5%;
   padding-right: 5%;
 }
+/*
+Created 06/23/2020 by Amanda Cheng.
+Edited 06/24/2020 by Amanda Cheng: introduced new stylizations for additional elements in index template.
+Edited 06/25/2020 by Amanda Cheng: Changed margins to keep everything in order.
+ */
 .header {
   background: #8e1002;
 }
@@ -86,11 +91,6 @@ div.header h1 {
   padding: 0;
   color: #ffffff;
 }
-/*
-Created 06/23/2020 by Amanda Cheng.
-Edited 06/24/2020 by Amanda Cheng: introduced new stylizations for additional elements in index template.
-Edited 06/25/2020 by Amanda Cheng: Changed margins to keep everything in order.
- */
 * {
   box-sizing: border-box;
 }
