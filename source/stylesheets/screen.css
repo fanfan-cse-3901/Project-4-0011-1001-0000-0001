@@ -52,7 +52,7 @@ h3 {
   padding-bottom: 0.9166666667em; /* 22 / 24 = 0.9166666667 */
 }
 a {
-  color: dimgray;
+  color: #8b8b8b;
   text-decoration: none;
 }
 /* Created on 06/25/2020 by Yifan Yao */
@@ -80,6 +80,10 @@ Edited 06/25/2020 by Amanda Cheng: Changed margins to keep everything in order.
  */
 .header {
   background: #8e1002;
+}
+.header a {
+  text-decoration: underline;
+  color: #fffcfc;
 }
 li.header {
   margin: 0 0;
@@ -170,6 +174,13 @@ div div {
 /* Created on 06/25/2020 by Yifan Yao */
 #navigation li a:hover {
   background-color: #5c5b61;
+}
+
+/* Created on 06/25/2020 by Prachiti Garge */
+.footer {
+  font-size: 0.75em;
+  background-color: #8e1002;
+  color: #ffffff;
 }
 /* Edited on 06/24/2020 by Kevin and Yifan: Flexbox changes for columns */
 @media screen and (min-width: 640px) {

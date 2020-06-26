@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-# File created 06/25/2020 by Yifan Yao
+# File created 06/22/2020 by Yifan Yao
+# File edited 06/25/2020 by Yifan Yao: Add support for <i> tags
 # Scrapping form http://web.cse.ohio-state.edu/~davis.1719/publications.html and divide it equally to two files
 #
 # Output data/event_list_left.json, data/event_list_right.json
