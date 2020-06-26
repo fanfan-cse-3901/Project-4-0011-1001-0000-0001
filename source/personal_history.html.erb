@@ -10,34 +10,43 @@ title: James W. Davis, Personal History
 <%# <html xmlns="http://www.w3.org/1999/html"> %>
 <%# Different for each page  <body> %>
 <%# Display Teaching and Appointments %>
-<div class ="aleft half appointments">
-<h1 class="personal_info">Appointments</h1>
-<%# appointments ruby code %>
-<p class="course_number">Years/Status</p>
-<p>Position</p>
-<p>Department</p>
-<p>University</p>
-<p>url</p>
 <%# stores the bulleted list from the ruby code %>
-<ul>
+<!--<html xmlns="http://www.w3.org/1999/html">-->
+ <!-- different for each page  <body>-->
+<!--Display Teaching and Appointments && value != 'N/A' <div class ="aleft half appointments"> -->
+<h1 class="personal_info">Appointments</h1>
+  <table class="personal_info">
+    <tr class="col_names">
+<!-- appointments ruby code -->
+<th>Years/Status</th>
+<th>Position</th>
+<th>Department</th>
+<th>University</th>
+<th>url</th>
+    </tr>
+<!-- stores the bulleted list from the ruby code -->
   <% json['Appointments'].each do |posn| %>
-    <li>
+      <tr>
   <% posn[1].each do |key,value| %>
         <%if key == 'status'%>
-      <p class="course_number"><%= value%></p>
+          <td><p class="course_number"><%= value%></p></td>
           <%end %>
-        <p><%= value if key != 'status' && key != 'url'%></p>
-        <% if key == 'url' && value != 'N/A' %>
-        <p><a href="<%= value%>"><%=value%></a></p>
+        <%if key != 'status' && key != 'url'%>
+        <td><%= value%></td>
+         <%end%>
+        <% if key == 'url'%>
+      <%if value != 'N/A' %>
+        <td><a href="<%= value%>"><%=value%></a></td>
+        <%else %>
+        <td></td>
+        <%end %>
           <%end %>
       <%end%>
-    </li>
+    </tr>
   <%end %>
-</ul>
-</div>
-
+  </table>
 <div class="teaching tright">
-<h1 class="personal_info">Teachings</h1>
+<h1 class="personal_info">Teaching</h1>
 
 <h2>School Year</h2>
   <p class="course_number"> Course Number </p>
@@ -53,7 +62,7 @@ title: James W. Davis, Personal History
         <%else%>
           <%val.each do |key1, val1| %>
           <%if key1.to_s == 'course' %>
-              <p class="course_number"> <%=val1.to_s %></p>
+              <h3 class="course"> <%=val1.to_s %></h3>
               <%else %>
                 <%=val1.to_s %>
             <%end%>
