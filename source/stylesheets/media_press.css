@@ -5,10 +5,10 @@ CSS stylesheet for media_press
 .header-center {
     color: #8e1002;
     font-weight: bolder;
-    font-size: 2em;
+    font-size: 2em; /* 36 / 18 = 2 */
     line-height: 0;
-    padding-top: .5em;
-    padding-bottom: 2em;
+    padding-top: 0.6111111111em; /* 22 / 36 = 0.6111111111 */
+    padding-bottom: 1.8333333333em; /* 66 / 36 = 1.8333333333 */
 }
 
 em {
@@ -19,8 +19,8 @@ em {
 div div h2 {
     color: black;
     line-height: 0;
-    padding-top: .3em;
-    padding-bottom: 1.3em;
+    padding-top: 0.4074074074em; /* 11 / 27 = 0.4074074074 */
+    padding-bottom: 1.2222222222em; /* 33 / 27 = 1.2222222222 */
     text-align: center;
 }
 div div li a:link {
