@@ -1,8 +1,10 @@
 /* Created on 06/25/2020 by Troy Stein */
 p.course_number {
-  font-size: 1em; /* 25/24 = 1.04166666666667*/
+  font-size: 1.3888888889em; /* 25 / 18 = 1.3888888889 */
   font-weight: bold;
-  padding-top: .66666667em/* 16/24 = .6666666667 */
+  line-height: 1.32em; /* 33 / 25 = 1.32 */
+  padding-top: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
+  padding-bottom: 0.6111111111em; /* 11 / 18 = 0.6111111111 */
 }
 table.personal_info, td, th {
   border-width: 2px;
@@ -10,11 +12,11 @@ table.personal_info, td, th {
   border-color: black;
 }
 td {
-  width: 50%;
+  width: 12.5%;
 }
 table {
   table-layout: auto;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 5%;
+  margin-left: 5%;
   align-content: center;
 }
