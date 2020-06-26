@@ -7,14 +7,9 @@ title: James W. Davis, Personal History
 <%#this is the html.erb file %>
 <%# Reads in .json file %>
 <% json = JSON.parse(File.read('./data/personal_history.json'))%>
-<%# <html xmlns="http://www.w3.org/1999/html"> %>
-<%# Different for each page  <body> %>
-<%# Display Teaching and Appointments %>
-<%# stores the bulleted list from the ruby code %>
-<!--<html xmlns="http://www.w3.org/1999/html">-->
  <!-- different for each page  <body>-->
 <!--Display Teaching and Appointments && value != 'N/A' <div class ="aleft half appointments"> -->
-<h1 class="personal_info">Appointments</h1>
+<h1 class="personal_info header-center">Appointments</h1>
   <table class="personal_info">
     <tr class="col_names">
 <!-- appointments ruby code -->
