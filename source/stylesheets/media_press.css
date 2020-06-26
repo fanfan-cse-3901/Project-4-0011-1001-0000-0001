@@ -1,0 +1,31 @@
+/*
+File created on 06/24/2020 by Kevin Dong
+CSS stylesheet for media_press
+*/
+.header-center {
+    color: #8e1002;
+    font-weight: bolder;
+    font-size: 2em;
+    line-height: 0;
+    padding-top: .5em;
+    padding-bottom: 2em;
+}
+
+em {
+    font-weight: bolder;
+    color: black;
+}
+
+div div h2 {
+    color: black;
+    line-height: 0;
+    padding-top: .3em;
+    padding-bottom: 1.3em;
+    text-align: center;
+}
+div div li a:link {
+    color: #8e1002;
+}
+div divli a:visited {
+    color: dimgray;
+}
