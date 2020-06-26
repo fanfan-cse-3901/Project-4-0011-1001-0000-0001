@@ -6,14 +6,13 @@ title: "James W. Davis, Media and Press"
 <% json =  JSON.parse(File.read('./data/media_press.json')) %>
 <h1 class="content-padding header-center">Media and Press</h1>
 <div class="flex-container content-padding">
-  <div id=left>
+  <div class="left media-press">
     <h2>TV/Video</h2>
     <ul>
       <% json['TVVideo'].each do |elem| %>
         <% elem.each do |key, value| %>
           <li><%= '<em>' + key + ": " + '</em>' + value %></li>
         <% end %>
-        <br>
       <% end %>
     </ul>
     <br>
@@ -23,26 +22,24 @@ title: "James W. Davis, Media and Press"
         <% elem.each do |key, value| %>
           <% if value.class == Array %>
             <% text = value[0].split '[' %>
-            <li><%='<em>' + key + ': ' + '</em>' + text[0] + '<a href=' + value[1] + '>[' + text[1]%></a></li>
+            <li><%='<em>' + key + ': ' + '</em>' + text[0] + '<a href="' + value[1] + '">[' + text[1]%></a></li>
           <% else %>
             <li><%= '<em>' + key + ": " + '</em>' + value %></li>
           <% end %>
         <% end %>
-        <br>
       <% end %>
     </ul>
   </div>
-  <div id=right>
+  <div class="right media-press">
     <h2>Print</h2>
     <ul>
       <% json['Print'].each do |elem| %>
         <% elem.each do |key, value| %>
           <% text = key.split "[" %>
-            <li><%=text[0] + '<a href='+ value[0] + '>[' + text[1] +'</a><a href=' + value[1] + '>[' + text[2]  if text.length == 3 %></a></li>
-            <li><%=text[0] + '<a href='+ value + '>[' + text[1]  if text.length == 2 %></a></li>
-            <li><%=text[0] if text.length == 1 %></li>
+            <%= '<li>' + text[0] + '<a href='+ value[0] + '>[' + text[1] +'</a><a href="' + value[1] + '">[' + text[2] + '</a></li>' if text.length == 3 %>
+            <%= '<li>' + text[0] + '<a href="'+ value + '">[' + text[1] + '</a></li>' if text.length == 2 %>
+            <%= '<li>' + text[0] + '</li>' if text.length == 1 %>
          <% end %>
-        <br>
       <% end %>
     </ul>
   </div>
