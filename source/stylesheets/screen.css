@@ -52,7 +52,7 @@ h3 {
   padding-bottom: 0.9166666667em; /* 22 / 24 = 0.9166666667 */
 }
 a {
-  color: dimgray;
+  color: #8b8b8b;
   text-decoration: none;
 }
 /* Created on 06/25/2020 by Yifan Yao */
@@ -80,6 +80,10 @@ Edited 06/25/2020 by Amanda Cheng: Changed margins to keep everything in order.
  */
 .header {
   background: #8e1002;
+}
+.header a {
+  text-decoration: underline;
+  color: #fffcfc;
 }
 li.header {
   margin: 0 0;

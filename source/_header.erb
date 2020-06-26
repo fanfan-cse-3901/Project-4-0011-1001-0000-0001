@@ -3,10 +3,13 @@
     <h1><%=data.index.header.name%></h1>
   <%# Print out each of its biography in header %>
 <ul>
-  <% data.index.bio.each do |node| %>
-    <li class="header"><%= node %></li>
+  <% data.index.bio.each_slice(2) do |node| %>
+    <li class="header"><%=node[0]%> | <%=node[1]%> </li>
   <% end %>
-  <li class="header"><a href="<%=data.index.header.college_url %>"><%=data.index.header.college %></a></li>
-  <li class="header"><a href="<%=data.index.header.dpt_url %>"><%=data.index.header.dpt %></a></li>
+
+  <li class="header">
+    <a href="<%=data.index.header.college_url %>"><%=data.index.header.college %></a>    |
+    <a href="<%=data.index.header.dpt_url %>"><%=data.index.header.dpt %></a>
+  </li>
 </ul>
 </div>
