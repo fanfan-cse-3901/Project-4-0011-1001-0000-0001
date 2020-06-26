@@ -3,80 +3,72 @@ layout: "layout"
 title: "James W. Davis, People"
 ---
 
-<!-- Created on 06/25/2020 by Prachiti Garge -->
-<!-- Original file I made had to be scraped since I hard coded into HTML -->
-<!-- Gets proper data file -->
+<%# Created on 06/25/2020 by Prachiti Garge %>
+<%# Gets proper data file %>
 <% json =  JSON.parse(File.read('./data/people.json')) %>
-<h1 class="content-padding">People</h1>
-<div class="flex-parent content-padding people">
-  <!-- Upper div -->
-    <!-- For three levels of students -->
-    <!-- For B.S. -->
-    <div class="leftSide flex-child">
+<h1 class="content-padding header-center">People</h1>
+<div class="content-padding people">
+    <%# For three levels of students %>
+    <%# For B.S. %>
+    <div class="leftSide">
       <h2>B.S. Students</h2>
       <ul>
         <% json['B.S_cur'].each do |name, qual| %>
-          <!-- Print each person's name and qualification -->
+          <%# Print each person's name and qualification %>
           <li><em class="per_name"><%= name %></em><% if qual!="" %><br/><em class="per_qual"><%= qual %></em><%end%></li>
-        <br/>
         <% end %>
       </ul>
     </div>
 
-    <!-- For M.S. -->
-    <div class="inCentre flex-child">
+    <%# For M.S. %>
+    <div class="inCentre">
       <h2>M.S. Students</h2>
       <ul>
         <% json['M.S_cur'].each do |name, qual| %>
-          <!-- Print each person's name and qualification -->
+          <%# Print each person's name and qualification %>
           <li><em class="per_name"><%= name %></em><% if qual!="" %><br/><em class="per_qual"><%= qual %></em><%end%></li>
-        <br/>
         <% end %>
       </ul>
     </div>
 
-    <!-- For Ph.D. -->
-    <div class="rightSide flex-child">
+    <%# For Ph.D. %>
+    <div class="rightSide">
       <h2>Ph.D. Students</h2>
       <ul>
         <% json['Ph.D_cur'].each do |name, qual| %>
-          <!-- Print each person's name and qualification -->
+          <%# Print each person's name and qualification %>
           <li><em class="per_name"><%= name %></em><% if qual!="" %><br/><em class="per_qual"><%= qual %></em><%end%></li>
-        <br/>
         <% end %>
       </ul>
     </div>
-  <!-- For three levels of students -->
-  <!-- For B.S. -->
-  <div class="leftSide flex-child">
+  <%# For three levels of students %>
+  <%# For B.S. %>
+  <div class="leftSide">
     <h2>B.S. Alumni</h2>
     <ul>
       <% json['B.S_alum'].each do |name,details| %>
-         <!-- Print out person's name, qual and topic on separate lines -->
+         <%# Print out person's name, qual and topic on separate lines %>
          <li><em class="per_name"><%= name %></em><% if details[0]!="" %><br/><em class="per_qual"><%= details[0] %></em><%end%><% if details[1]!="" %><br/><em class="per_topic"><%= details[1] %></em><%end%></li>
-      <br/>
       <% end %>
     </ul>
   </div>
-  <!-- For M.S. -->
-  <div class="inCentre flex-child">
+  <%# For M.S. %>
+  <div class="inCentre">
     <h2>M.S. Alumni</h2>
     <ul>
       <% json['M.S_alum'].each do |name, details| %>
-        <!-- Print out person's name, qual and topic on separate lines -->
+        <%# Print out person's name, qual and topic on separate lines %>
         <li ><em class="per_name"><%= name %></em><% if details[0]!="" %><br/><em class="per_qual"><%= details[0] %></em><%end%><% if details[1]!="" %><br/><em class="per_topic"><%= details[1] %></em><%end%></li>
-      <br/>
       <% end %>
     </ul>
   </div>
-  <!-- For Ph.D. -->
-  <div class="rightSide flex-child">
+  <%# For Ph.D. %>
+  <div class="rightSide">
     <h2>Ph.D. Alumni</h2>
     <ul>
       <% json['Ph.D_alum'].each do |name, details| %>
-        <!-- Print out person's name, qual and topic on separate lines -->
+        <%# Print out person's name, qual and topic on separate lines %>
         <li ><em class="per_name"><%= name %></em><% if details[0]!="" %><br/><em class="per_qual"><%= details[0] %></em><%end%><% if details[1]!="" %><br/><em class="per_topic"><%= details[1] %></em><%end%></li>
-      <br/>
       <% end %>
     </ul>
   </div>
