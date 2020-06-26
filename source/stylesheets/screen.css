@@ -171,6 +171,13 @@ div div {
 #navigation li a:hover {
   background-color: #5c5b61;
 }
+
+/* Created on 06/25/2020 by Prachiti Garge */
+.footer {
+  font-size: 0.75em;
+  background-color: #8e1002;
+  color: #ffffff;
+}
 /* Edited on 06/24/2020 by Kevin and Yifan: Flexbox changes for columns */
 @media screen and (min-width: 640px) {
   #left {
