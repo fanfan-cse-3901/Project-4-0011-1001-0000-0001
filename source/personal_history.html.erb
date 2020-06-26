@@ -6,7 +6,7 @@ title: James W. Davis, Personal History
 <%# Created by Troy Stein on 06/20/2020 sets up personal history css file %>
 <%#this is the html.erb file %>
 <%# Reads in .json file %>
-<% json =  JSON.parse(File.read('./data/personal_history.json'))%>
+<% json = JSON.parse(File.read('./data/personal_history.json'))%>
 <%# <html xmlns="http://www.w3.org/1999/html"> %>
 <%# Different for each page  <body> %>
 <%# Display Teaching and Appointments %>
@@ -35,17 +35,16 @@ title: James W. Davis, Personal History
         <td><%= value%></td>
          <%end%>
         <% if key == 'url'%>
-      <%if value != 'N/A' %>
+      <% if value != 'N/A' %>
         <td><a href="<%= value%>"><%=value%></a></td>
-        <%else %>
+        <% else %>
         <td></td>
-        <%end %>
-          <%end %>
-      <%end%>
+        <% end %>
+          <% end %>
+      <% end %>
     </tr>
-  <%end %>
+  <% end %>
   </table>
-<div class="teaching tright">
 <h1 class="personal_info">Teaching</h1>
 
 <h2>School Year</h2>
@@ -54,22 +53,22 @@ title: James W. Davis, Personal History
 <ul>
   <% json['Teaching'].each do |year|%>
   <li>
-    <%year[1].each do |key,val| %>
-      <%if key.to_s== 'year' %>
-        <h2><%=val.to_s%></h2>
-      <%elsif key.to_s == 'information'  %>
+    <% year[1].each do |key,val| %>
+      <% if key.to_s== 'year' %>
+        <h2><%= val.to_s %></h2>
+      <% elsif key.to_s == 'information'  %>
           <p><%=val.to_s %> </p>
-        <%else%>
-          <%val.each do |key1, val1| %>
-          <%if key1.to_s == 'course' %>
+        <% else %>
+          <% val.each do |key1, val1| %>
+          <% if key1.to_s == 'course' %>
               <h3 class="course"> <%=val1.to_s %></h3>
-              <%else %>
-                <%=val1.to_s %>
-            <%end%>
-            <%end %>
-            <%end %>
-          <%end %>
-      <%end%>
+              <% else %>
+                <%= val1.to_s %>
+            <% end %>
+            <% end %>
+            <% end %>
+          <% end %>
+      <% end %>
   </li>
 </ul>
 </div>
