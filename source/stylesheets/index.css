@@ -1,0 +1,55 @@
+/*
+Created 06/23/2020 by Amanda Cheng.
+Edited 06/24/2020 by Amanda Cheng: introduced new stylizations for additional elements in index template.
+Edited 06/25/2020 by Amanda Cheng: Changed margins to keep everything in order.
+ */
+* {
+  box-sizing: border-box;
+}
+/* Created 06/23/2020 by Amanda Cheng */
+p.intro {
+  float: right;
+  width: 82%;
+  text-align: left;
+}
+/* Created 06/23/2020 by Amanda Cheng */
+img {
+  float: left;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  max-height: 33.3333333333em; /* 600 / 18 = 33.3333333333 */
+  max-width: 22.2222222222em; /* 400 / 18 = 22.2222222222 */
+}
+/* Created 06/23/2020 by Amanda Cheng */
+div.left_pic {
+  font-weight: bold;
+  text-align: left;
+  padding: 5% 5%;
+}
+/* Created 06/23/2020 by Amanda Cheng */
+/* Education Section */
+.right_pic {
+  padding: 15% 5%;
+  text-align: left;
+}
+.right_pic img {
+  float: right;
+  height: auto;
+  width: auto;
+  max-height: 27.7777777778em; /* 500 / 18 = 27.7777777778 */
+}
+/* Created 06/23/2020 by Amanda Cheng */
+/* Noteworthy section */
+.bottom {
+  font-weight: bold;
+  padding: 2% 0%;
+  border: solid black 2px;
+  width: 65%;
+  display: inline-block;
+}
+/* Created 06/23/2020 by Amanda Cheng */
+.bottom li {
+  font-size: 0.6666666667em; /* 12 / 18 = 0.6666666667 */
+  padding-bottom: 0.9166666667em; /* 11 / 12 = 0.9166666667 */
+}
